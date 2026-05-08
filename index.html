@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wassim Zeiny — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ── SPLASH ── -->
+  <div id="splash">
+    <p class="splash-verse">
+      And He said, <em>Be</em> — and it <em>became</em>
+    </p>
+    <div class="splash-line"></div>
+    <h1 class="splash-name">W<span>·</span>A<span>·</span>S<span>·</span>S<span>·</span>I<span>·</span>M</h1>
+    <button class="splash-enter" onclick="enterSite()">Enter</button>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">W.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-tag">Computer Science Graduate &amp; Full-Stack Developer</p>
+    <h1 class="hero-name">
+      Wassim
+      <span class="hero-name-last">Zeiny</span>
+    </h1>
+    <p class="hero-title">Building end-to-end systems — from Tripoli to the world.</p>
+    <a href="#about" class="hero-cta">Discover My Work ↓</a>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <p class="section-label reveal">01 — About</p>
+    <h2 class="section-title reveal reveal-delay-1">A developer <em>driven<br/>by purpose</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal reveal-delay-2">
+        Computer Science graduate from the <strong>University of Balamand</strong> with hands-on experience in full-stack web development, blockchain-based applications, desktop application development, and robotics education.
+        <br/><br/>
+        Proficient in Java, C++, Python, JavaScript, and TypeScript. Demonstrated ability to design and deliver end-to-end software systems across multiple domains — from blockchain-secured academic platforms to e-commerce desktop applications with computer vision and 3D visualization. Strong communicator with leadership experience as President of a youth committee.
+      </div>
+      <div class="about-details reveal reveal-delay-3">
+        <div class="about-detail-item">
+          <span class="about-detail-label">Location</span>
+          <span class="about-detail-value">Tripoli, Lebanon</span>
+        </div>
+        <div class="about-detail-item">
+          <span class="about-detail-label">Phone</span>
+          <span class="about-detail-value">+961 3 35 74 60</span>
+        </div>
+        <div class="about-detail-item">
+          <span class="about-detail-label">Focus</span>
+          <span class="about-detail-value">Full-Stack Development · Blockchain · Computer Vision · Robotics Education</span>
+        </div>
+        <div class="about-detail-item">
+          <span class="about-detail-label">Languages</span>
+          <span class="about-detail-value">Arabic (Native) · English — IELTS 7.5 (C1)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <p class="section-label reveal">02 — Skills</p>
+    <h2 class="section-title reveal reveal-delay-1">What I <em>bring<br/>to the table</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-delay-1">
+        <span class="skill-card-num">01</span>
+        <p class="skill-card-cat">Languages</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <span class="skill-card-num">02</span>
+        <p class="skill-card-cat">Web &amp; Frameworks</p>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">JavaFX</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <span class="skill-card-num">03</span>
+        <p class="skill-card-cat">Cloud &amp; Databases</p>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS S3</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">JWT Auth</span>
+          <span class="skill-tag">Spring Security</span>
+          <span class="skill-tag">Swagger</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-4">
+        <span class="skill-card-num">04</span>
+        <p class="skill-card-cat">Blockchain &amp; AI</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Ethereum</span>
+          <span class="skill-tag">Smart Contracts</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">UML</span>
+          <span class="skill-tag">Robotics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <p class="section-label reveal">03 — Experience</p>
+    <h2 class="section-title reveal reveal-delay-1">Where I've <em>made<br/>my mark</em></h2>
+    <div class="exp-list">
+
+      <div class="exp-item reveal reveal-delay-1">
+        <div class="exp-meta">
+          <p class="exp-period">June 2023 — Present</p>
+          <p class="exp-company">Junior Engineers</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">Robotics Instructor</p>
+          <p class="exp-desc">Developed robotics curricula and taught hands-on sessions for young learners across academic-year programs and seasonal camps. Delivered private robotics lessons tailored to individual student pace and skill level.</p>
+          <div class="exp-tags">
+            <span class="exp-tag">Robotics</span>
+            <span class="exp-tag">Curriculum Design</span>
+            <span class="exp-tag">Teaching</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal reveal-delay-2">
+        <div class="exp-meta">
+          <p class="exp-period">Jan 2025 — Present</p>
+          <p class="exp-company">Ajialouna</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">President, Youth Committee</p>
+          <p class="exp-desc">Lead the planning, organization, and execution of community events and fundraisers. Coordinate youth teams and manage event logistics across multiple concurrent programs.</p>
+          <div class="exp-tags">
+            <span class="exp-tag">Leadership</span>
+            <span class="exp-tag">Event Management</span>
+            <span class="exp-tag">Coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal reveal-delay-3">
+        <div class="exp-meta">
+          <p class="exp-period">Aug 2022 — Present</p>
+          <p class="exp-company">Ajialouna</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">Volunteer</p>
+          <p class="exp-desc">Assisted in coordinating community events, outreach activities, and aid distribution to families in need.</p>
+          <div class="exp-tags">
+            <span class="exp-tag">Community</span>
+            <span class="exp-tag">Outreach</span>
+            <span class="exp-tag">Aid Distribution</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <p class="section-label reveal">04 — Projects</p>
+    <h2 class="section-title reveal reveal-delay-1">Things I've <em>built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 01</p>
+        <h3 class="project-title">CERTAFIED</h3>
+        <p class="project-desc">Blockchain-based academic certificate platform managing student submissions, plagiarism detection, graduation clearance workflows, and tamper-proof digital certificate issuance via Ethereum smart contracts. Role-based access for students, doctors, admins, and employers.</p>
+        <div class="project-stack">
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">Express.js</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">AWS S3</span>
+          <span class="project-tech">Ethereum</span>
+          <span class="project-tech">FastAPI</span>
+          <span class="project-tech">JWT</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 02</p>
+        <h3 class="project-title">FieldFinder</h3>
+        <p class="project-desc">Full-stack web application enabling soccer players to browse, filter, and book football fields by location, price, and real-time availability. Includes user authentication, human verification, a calendar-based time slot booking system, and booking history management.</p>
+        <div class="project-stack">
+          <span class="project-tech">React</span>
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">Express.js</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">OpenCV</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 03</p>
+        <h3 class="project-title">Store System</h3>
+        <p class="project-desc">Full-stack desktop e-commerce application with a Spring Boot REST backend and JavaFX GUI. Features JWT auth, BCrypt password hashing, real-time face verification via OpenCV, and an interactive 3D product viewer parsing Wavefront OBJ models with mouse-driven rotation.</p>
+        <div class="project-stack">
+          <span class="project-tech">Spring Boot</span>
+          <span class="project-tech">JavaFX</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">OpenCV</span>
+          <span class="project-tech">JWT</span>
+          <span class="project-tech">Swagger</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 04</p>
+        <h3 class="project-title">Heart Disease Prediction</h3>
+        <p class="project-desc">ML study building and evaluating Logistic Regression, Random Forest, and SVM models with and without PCA dimensionality reduction. Random Forest (no PCA) achieved 91% accuracy and 0.92 F1-score, with L1/L2 regularization and GridSearchCV hyperparameter tuning.</p>
+        <div class="project-stack">
+          <span class="project-tech">Python</span>
+          <span class="project-tech">Scikit-learn</span>
+          <span class="project-tech">PCA</span>
+          <span class="project-tech">GridSearchCV</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 05</p>
+        <h3 class="project-title">Smart Home System</h3>
+        <p class="project-desc">Java console application simulating a multi-room smart home with separate admin and user access modes. Features a device class hierarchy, real-time power consumption tracking, automated standby queues, and smart re-activation logic for night-mode-restricted devices.</p>
+        <div class="project-stack">
+          <span class="project-tech">Java</span>
+          <span class="project-tech">OOP</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-card-accent"></div>
+        <p class="project-num">Project 06</p>
+        <h3 class="project-title">2D Browser Game</h3>
+        <p class="project-desc">Browser-based 2D game built from scratch covering mechanics, level design, and software architecture. Includes player stats, pause/resume keyboard shortcuts, win/lose conditions, a scoreboard, and an animated story intro.</p>
+        <div class="project-stack">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML5 Canvas</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education">
+    <p class="section-label reveal">05 — Education</p>
+    <h2 class="section-title reveal reveal-delay-1">The <em>foundation</em></h2>
+    <div class="edu-list">
+      <div class="edu-item reveal reveal-delay-1">
+        <div class="edu-year">2025</div>
+        <div>
+          <p class="edu-school">University of Balamand — Lebanon</p>
+          <p class="edu-degree">Bachelor of Computer Science</p>
+          <p class="edu-note">August 2022 – December 2025. Coursework spanning algorithms, data structures, system architecture, databases, OOP, robotics, and blockchain development. Capstone project: CERTAFIED — a blockchain-based academic certificate verification platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <p class="section-label reveal">06 — Contact</p>
+    <h2 class="section-title reveal reveal-delay-1">Let's <em>create<br/>something</em></h2>
+    <a href="mailto:wassimzeiny@gmail.com" class="contact-email reveal reveal-delay-2">wassimzeiny@gmail.com</a>
+    <div class="contact-links reveal reveal-delay-3">
+      <a href="tel:+9613357460" class="contact-link">+961 3 35 74 60</a>
+      <span class="contact-divider">·</span>
+      <span class="contact-link-plain">Tripoli, Lebanon</span>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer-copy">© 2025 <span>Wassim Zeiny</span>. Crafted with intention.</p>
+    <p class="footer-copy">Tripoli, Lebanon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
