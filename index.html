@@ -22,7 +22,6 @@
     </p>
     <div class="splash-line"></div>
     <h1 class="splash-name">W<span>·</span>A<span>·</span>S<span>·</span>S<span>·</span>I<span>·</span>M</h1>
-    <button class="splash-enter" onclick="enterSite()">Enter</button>
   </div>
 
   <!-- ── NAV ── -->
@@ -31,12 +30,28 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- ── MOBILE NAV DRAWER ── -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ── BACK TO TOP ── -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <!-- ── HERO ── -->
   <section id="hero">
@@ -144,66 +159,9 @@
     </div>
   </section>
 
-  <!-- ── EXPERIENCE ── -->
-  <section id="experience">
-    <p class="section-label reveal">03 — Experience</p>
-    <h2 class="section-title reveal reveal-delay-1">Where I've <em>made<br/>my mark</em></h2>
-    <div class="exp-list">
-
-      <div class="exp-item reveal reveal-delay-1">
-        <div class="exp-meta">
-          <p class="exp-period">June 2023 — Present</p>
-          <p class="exp-company">Junior Engineers</p>
-        </div>
-        <div class="exp-body">
-          <p class="exp-role">Robotics Instructor</p>
-          <p class="exp-desc">Developed robotics curricula and taught hands-on sessions for young learners across academic-year programs and seasonal camps. Delivered private robotics lessons tailored to individual student pace and skill level.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">Robotics</span>
-            <span class="exp-tag">Curriculum Design</span>
-            <span class="exp-tag">Teaching</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal reveal-delay-2">
-        <div class="exp-meta">
-          <p class="exp-period">Jan 2025 — Present</p>
-          <p class="exp-company">Ajialouna</p>
-        </div>
-        <div class="exp-body">
-          <p class="exp-role">President, Youth Committee</p>
-          <p class="exp-desc">Lead the planning, organization, and execution of community events and fundraisers. Coordinate youth teams and manage event logistics across multiple concurrent programs.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">Leadership</span>
-            <span class="exp-tag">Event Management</span>
-            <span class="exp-tag">Coordination</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal reveal-delay-3">
-        <div class="exp-meta">
-          <p class="exp-period">Aug 2022 — Present</p>
-          <p class="exp-company">Ajialouna</p>
-        </div>
-        <div class="exp-body">
-          <p class="exp-role">Volunteer</p>
-          <p class="exp-desc">Assisted in coordinating community events, outreach activities, and aid distribution to families in need.</p>
-          <div class="exp-tags">
-            <span class="exp-tag">Community</span>
-            <span class="exp-tag">Outreach</span>
-            <span class="exp-tag">Aid Distribution</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- ── PROJECTS ── -->
   <section id="projects">
-    <p class="section-label reveal">04 — Projects</p>
+    <p class="section-label reveal">03 — Projects</p>
     <h2 class="section-title reveal reveal-delay-1">Things I've <em>built</em></h2>
     <div class="projects-grid">
 
@@ -292,7 +250,7 @@
 
   <!-- ── EDUCATION ── -->
   <section id="education">
-    <p class="section-label reveal">05 — Education</p>
+    <p class="section-label reveal">04 — Education</p>
     <h2 class="section-title reveal reveal-delay-1">The <em>foundation</em></h2>
     <div class="edu-list">
       <div class="edu-item reveal reveal-delay-1">
@@ -308,7 +266,7 @@
 
   <!-- ── CONTACT ── -->
   <section id="contact">
-    <p class="section-label reveal">06 — Contact</p>
+    <p class="section-label reveal">05 — Contact</p>
     <h2 class="section-title reveal reveal-delay-1">Let's <em>create<br/>something</em></h2>
     <a href="mailto:wassimzeiny@gmail.com" class="contact-email reveal reveal-delay-2">wassimzeiny@gmail.com</a>
     <div class="contact-links reveal reveal-delay-3">

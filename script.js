@@ -24,23 +24,36 @@ function animateRing() {
 animateRing();
 
 // ─────────────────────────────────────────
-// SPLASH SCREEN
+// SPLASH SCREEN — 3 seconds, auto-dismiss
 // ─────────────────────────────────────────
 const splash = document.getElementById('splash');
-let splashDone = false;
 
-// Lock scroll while splash is showing
 document.body.style.overflow = 'hidden';
 
-function enterSite() {
-  if (splashDone) return;
-  splashDone = true;
+setTimeout(() => {
   splash.classList.add('hidden');
   document.body.style.overflow = 'auto';
-}
+}, 3000);
 
-// Auto-dismiss after 5.5 seconds
-setTimeout(enterSite, 5500);
+// ─────────────────────────────────────────
+// HAMBURGER MENU
+// ─────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+});
+
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = 'auto';
+  });
+});
 
 // ─────────────────────────────────────────
 // SCROLL REVEAL
@@ -68,4 +81,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
+
+// ─────────────────────────────────────────
+// BACK TO TOP
+// ─────────────────────────────────────────
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 500);
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
